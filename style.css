@@ -94,3 +94,69 @@ a {
 #check {
     display: none;
 }
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+div.gallery {
+    margin: 15px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 400px;
+    height: 560px;
+    margin-left: 27px;
+    text-align: center;
+  }
+  
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 390px;
+  height: 200px;
+}
+
+div.desc {
+  padding: 10px;
+  text-align: justify;
+}
+
+div.Penerapan {
+    margin: 7px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 260px;
+  }
+    
+div.Penerapan img {
+  width: 260px;
+  height: 220px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+iframe{
+  padding: 10px;
+}
