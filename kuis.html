@@ -22,7 +22,7 @@
     </div>
   </nav>
         
-  <div class="row">
+<div class="row">
     <div class="d-flex flex-column col-auto">
         <ul class="nav nav-pills flex-column pt-3">
             <li class="nav-item my-sm-1 my-2">
@@ -31,15 +31,13 @@
                     <span class="judul">Beranda</span>
                 </a>
             </li>
+            
             <li class="nav-item my-sm-1 my-1 disabled">
-
-
                 <a href="#sidemenu" data-bs-toggle="collapse" class="nav-link text-white" aria-current="page">
                     <i class="fas fa-book"></i>
                     <span class="judul">Materi</span>
                     <i class="fas fa-caret-down"></i>
                 </a>
-                
                 <ul class="nav collapse list-unstyled" id="sidemenu" data-bs-parent="#menu">
                     <li class="nav-item">
                         <a class="nav-link text-white" href="sejarah.html">Sejarah</a>
@@ -55,18 +53,33 @@
                     </li>
                 </ul>
             </li>
-            <li class="nav-item my-sm-1 my-1">
-                <a href="video.html" class="nav-link text-white" aria-current="page">
+            
+            <li class="nav-item my-sm-1 my-1 disabled">
+                <a href="#sidemenu-video" data-bs-toggle="collapse" class="nav-link text-white" aria-current="page">
                     <i class="fas fa-video"></i>
                     <span class="judul">Video</span>
+                    <i class="fas fa-caret-down"></i>
                 </a>
+                <ul class="nav collapse list-unstyled" id="sidemenu-video" data-bs-parent="#menu">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="video_sejarah.html">Sejarah</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="video_motif.html">Motif</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="video_teknik.html">Teknik</a>
+                    </li>
+                </ul>
             </li>
+            
             <li class="nav-item my-sm-1 my-1">
                 <a href="kuis.html" class="nav-link text-white" aria-current="page">
                     <i class="fas fa-question"></i>
                     <span class="judul">Kuis</span>
                 </a>
             </li>
+            
             <li class="nav-item my-sm-1 my-1">
                 <a href="" class="nav-link text-white" aria-current="page">
                     <i class="fas fa-info"></i>
@@ -77,27 +90,26 @@
     </div>
 </div>
 
-
-        <div class="main container-fluid">
-            <div class="container mt-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h4>Kuis</h4>
-                    </div>
-                </div>
-                <div class="konten card mt-3">
-                    <div class="card-body">
-                        <div class="card-title text-center m-5">
-                            <h5>Motif pada kain Sasirangan biasanya menggambarkan apa?</h5>
-                        </div>
-                        <div class="d-flex flex-column">
-                            <button class="btn btn-secondary mb-2" type="submit">Kehidupan Laut</button>
-                            <button class="btn btn-secondary mb-2" type="submit">Pola Geometris</button>
-                            <button class="btn btn-secondary mb-2" type="submit">Tokoh Pewayangan</button>
-                            <button class="btn btn-secondary mb-2" type="submit">Upacara Adat</button>
-                    </div>
-                </div>
+<div class="main container-fluid">
+    <div class="container mt-3">
+        <div class="card">
+            <div class="card-body">
+                <h4>Kuis</h4>
             </div>
         </div>
+        <div class="konten card mt-3">
+            <div class="card-body">
+                <div class="card-title text-center m-5">
+                    <h5>Motif pada kain Sasirangan biasanya menggambarkan apa?</h5>
+                </div>
+                <div class="d-flex flex-column">
+                    <button class="btn btn-secondary mb-2" type="submit">Kehidupan Laut</button>
+                    <button class="btn btn-secondary mb-2" type="submit">Pola Geometris</button>
+                    <button class="btn btn-secondary mb-2" type="submit">Tokoh Pewayangan</button>
+                    <button class="btn btn-secondary mb-2" type="submit">Upacara Adat</button>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
