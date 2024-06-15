@@ -21,7 +21,7 @@ body {
   color: black !important;
 }
 
-.row {
+.sidebar {
   position: fixed;
   top: 58px; /* Adjusted to be below the navbar */
   height: calc(100% - 58px);
@@ -100,7 +100,7 @@ a {
   color: black;
 }
 
-#check:checked ~ .row {
+#check:checked ~ .sidebar {
   width: 186px;
 }
 
