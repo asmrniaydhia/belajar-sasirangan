@@ -11,93 +11,109 @@
 </head>
 <body>
     <input type="checkbox" id="check">
-  <nav class="navbar">
-    <div class="container-fluid">
-      <form class="d-flex">
-        <label for="check" class="mb-0">
-          <i class="fas fa-bars" id="sidebar_btn"></i>
-        </label>
-        <span class="navbar-brand ms-2 h3">Sasirangan Learn</span>
-      </form>
-    </div>
-  </nav>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <form class="d-flex">
+                <label for="check" class="mb-0">
+                    <i class="fas fa-bars" id="sidebar_btn"></i>
+                </label>
+                <span class="navbar-brand ms-3 h1">Belajar Sasirangan</span>
+            </form>
+        </div>
+    </nav>
         
-  <div class="row">
-    <div class="d-flex flex-column col-auto">
-        <ul class="nav nav-pills flex-column pt-3">
-            <li class="nav-item my-sm-1 my-2">
-                <a href="beranda.html" class="nav-link text-white" aria-current="page">
-                    <i class="fas fa-home"></i>
-                    <span class="judul">Beranda</span>
-                </a>
-            </li>
-            <li class="nav-item my-sm-1 my-1 disabled">
-
-
-                <a href="#sidemenu" data-bs-toggle="collapse" class="nav-link text-white" aria-current="page">
-                    <i class="fas fa-book"></i>
-                    <span class="judul">Materi</span>
-                    <i class="fas fa-caret-down"></i>
-                </a>
-                
-                <ul class="nav collapse list-unstyled" id="sidemenu" data-bs-parent="#menu">
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="sejarah.html">Sejarah</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Motif</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="teknik.html">Teknik</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Penerapan</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="nav-item my-sm-1 my-1">
-                <a href="" class="nav-link text-white" aria-current="page">
-                    <i class="fas fa-video"></i>
-                    <span class="judul">Video</span>
-                </a>
-            </li>
-            <li class="nav-item my-sm-1 my-1">
-                <a href="kuis.html" class="nav-link text-white" aria-current="page">
-                    <i class="fas fa-question"></i>
-                    <span class="judul">Kuis</span>
-                </a>
-            </li>
-            <li class="nav-item my-sm-1 my-1">
-                <a href="tentang.html" class="nav-link text-white" aria-current="page">
-                    <i class="fas fa-info"></i>
-                    <span class="judul">Tentang</span>
-                </a>
-            </li>
-        </ul>
+    <div class="sidebar row">
+        <div class="d-flex flex-column col-auto">
+            <ul class="nav nav-pills flex-column pt-3">
+                <li class="nav-item my-sm-1 my-2">
+                    <a href="beranda.html" class="nav-link text-white" aria-current="page">
+                        <i class="fas fa-home"></i>
+                        <span class="judul">Beranda</span>
+                    </a>
+                </li>
+                <li class="nav-item my-sm-1 my-1 disabled">
+                    <a href="#sidemenu" data-bs-toggle="collapse" class="nav-link text-white" aria-current="page">
+                        <i class="fas fa-book"></i>
+                        <span class="judul">Materi</span>
+                        <i class="fas fa-caret-down"></i>
+                    </a>
+                    <ul class="nav collapse list-unstyled" id="sidemenu" data-bs-parent="#menu">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="materi_sejarah.html">Sejarah</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="materi_motif.html">Motif</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="materi_teknik.html">Teknik</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="materi_penerapan.html">Penerapan</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item my-sm-1 my-1 disabled">
+                    <a href="#sidemenu-video" data-bs-toggle="collapse" class="nav-link text-white" aria-current="page">
+                        <i class="fas fa-video"></i>
+                        <span class="judul">Video</span>
+                        <i class="fas fa-caret-down"></i>
+                    </a>
+                    <ul class="nav collapse list-unstyled" id="sidemenu-video" data-bs-parent="#menu">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="video_sejarah.html">Sejarah</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="video_motif.html">Motif</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="video_teknik.html">Teknik</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item my-sm-1 my-1">
+                    <a href="kuis.html" class="nav-link text-white" aria-current="page">
+                        <i class="fas fa-question"></i>
+                        <span class="judul">Kuis</span>
+                    </a>
+                </li>
+                <li class="nav-item my-sm-1 my-1">
+                    <a href="" class="nav-link text-white" aria-current="page">
+                        <i class="fas fa-info"></i>
+                        <span class="judul">Tentang</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
-</div>
 
-<div class="main container-fluid">
-    <div class="container mt-5">
-        <div class="konten card mt-5">
-            <div class="card-body" >
-                <div class="container p-2 my-4 border">
-                    <h3>Apa Itu Aplikasi Sasirangan Learn ?</h3>
-                    <p><b>Sasirangan Learn</b> adalah plafrom digital inovatif yang didedikasikan untuk mengajarkan seni dan budaya sasirangan, kain khas Kalimantan Selatan. Melalui aplikasi ini, pengguna dapat mempelajari sejarah, motif-mofit, teknik pembuatan, dan penerapan kain sasirangan. Dilengkapi dengan materi dan video, aplikasi ini dirancang untuk semua kalangan baik anak-anak maupun dewasa. Dengan mengintegrasikan teknologi modern, platform ini bermanfaat untuk melestarikan dan mengembangkan warisan budaya sasirangan serta menginspirasi generasi muda untuk terus mencintai dan menjaga budaya. </p>
+    <div class="main container-fluid">
+        <div class="container mt-5">
+            <div class="konten card mt-5">
+                <div class="card-body">
+                    <div class="row g-0" style="background-color: #F4EDCC; border-radius: 0 0 0 130px; padding: 30px;">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title"><b>Apa Itu Platform Belajar Sasirangan ?</b></h3>
+                                <p><b>Belajar Sasirangan</b> adalah platform digital inovatif yang didedikasikan untuk mengajarkan seni dan budaya sasirangan, kain khas Kalimantan Selatan. Melalui aplikasi ini, pengguna dapat mempelajari sejarah, motif-motif, teknik pembuatan, dan penerapan kain sasirangan. Dilengkapi dengan materi dan video, aplikasi ini dirancang untuk siswa pada mata pelajaran Prakarya. Dengan mengintegrasikan teknologi modern, platform ini bermanfaat untuk melestarikan dan mengembangkan warisan budaya sasirangan serta menginspirasi generasi muda untuk terus mencintai dan menjaga budaya.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="guru.png" class="img-fluid rounded-start" alt="guru" style="height: 300px;">
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3" style="margin-top: 70px;">
+                        <div class="p-2 flex-fill" style="width: 300vh;">
+                            <h3><b>Visi</b></h3>
+                            <p>Menjadi platform pembelajaran digital terdepan yang menginspirasi dan memberdayakan generasi muda untuk melestarikan dan mengembangkan seni dan budaya sasirangan sebagai warisan budaya yang berharga.</p>
+                        </div>
+                        <div class="p-2 flex-fill" style="width: 300vh;">
+                            <h3><b>Misi</b></h3>
+                            <p>Menyediakan konten pembelajaran sasirangan yang komperensif dan mudah dipahami, mendukung pengembangan keterampilan praktis, melestarikan dan mempromosikan budaya sasirangan, memanfaatkan teknologi terkini untuk akses pembelajaran yang lebih mudah, serta mendorong kreativitas dan inovasi dalam desain sasirangan.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="d-flex justify-content-between mb-3">
-                    <div class="p-2 flex-fill border" style="width: 400vh;">
-                        <h3>Visi</h3>
-                        <p>Menjadi platform pembelajaran digital terdepan yang menginspirasi dan memberdayakan generasi muda untuk melestarikan dan mengembangkan seni dan budaya sasirangan sebagai warisan budaya yang berharga.</p>
-                    </div>
-                    <div class="p-2 flex-fill border">
-                        <h3>Misi</h3>
-                        <p>Menyediakan konten pembelajaran sasirangan yang komprehensif dan mudah dipahami, mendukung pengembangan keterampilan praktis, melestarikan dan mempromosikan budaya sasirangan, membangun komunitas online untuk berbagi pengetahuan dan pengalaman, memanfaatkan teknologi terkini untuk akses pembelajaran yang lebih mudah, serta mendorong kreativitas dan inovasi dalam desain sasirangan.</p>
-                    </div>
-                    </div>
             </div>
         </div>
     </div>
-</div>
 </body>
 </html>
