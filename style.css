@@ -1,7 +1,7 @@
 body {
-  background-color: #DFE9F5;
-}
-
+    background-color: #DFE9F5;
+  }
+  
 .navbar {
   position: fixed;
   width: 100%;
@@ -10,7 +10,7 @@ body {
   background-color: #FFF;
   z-index: 1000;
 }
-
+  
 .navbar-brand {
   font-weight: bolder;
   font-size: x-large;
@@ -19,34 +19,60 @@ body {
 .nav-pills li a:hover {
   background-color: #FFF;
   color: black !important;
+  left: 6px;
 }
 
 .sidebar {
-  position: fixed;
-  top: 58px; /* Adjusted to be below the navbar */
-  height: calc(100% - 58px);
+  position: absolute;
+  height: 91%;
   background-color: #38A49D !important;
   background: #FFF;
   width: 75px;
-  left: 12px;
+  left: 0;
   overflow: hidden;
   transition: width 0.2s linear;
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
-  z-index: 999;
+  z-index: 100;
+  pointer-events: none;
 }
 
+.sidebar .nav-pills li a {
+  color: rgb(85, 83, 83);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-align: left;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.sidebar .nav-pills li a .judul {
+    display: none;
+    margin-left: 10px;
+}
+
+.sidebar .nav-pills li a .fas.fa-caret-down {
+    display: none;
+    margin-left: auto;
+}
+
+.sidebar .nav-pills li a:hover {
+    background-color: transparent;
+    color: rgb(85, 83, 83);
+}
+  
 .fas {
   position: relative;
   width: 20px;
   height: 40px;
   top: 10px;
+  left: 7px;
   font-size: 20px;
 }
 
 .judul {
   position: relative;
-  top: 7px;
-  margin-left: 25px;
+  left: 10px;
 }
 
 a {
@@ -61,7 +87,7 @@ a {
 .nav-pills li a {
   width: 160px;
 }
-
+  
 .nav-pills, .collapse li a {
   width: 163px;
 }
@@ -73,6 +99,15 @@ a {
   margin-left: 92px;
   transition: margin-left 0.5s ease, width 0.5s ease;
   width: calc(100% - 92px);
+}
+
+#check:checked ~ .main {
+  margin-left: 198px;
+  width: calc(100% - 198px);
+}
+
+#check {
+    display: none;
 }
 
 .beranda {
@@ -102,20 +137,37 @@ a {
 
 #check:checked ~ .sidebar {
   width: 186px;
+  pointer-events: auto;
 }
 
-#check:checked ~ .main {
-  margin-left: 198px;
-  width: calc(100% - 198px);
+#check:checked ~ .sidebar {
+  width: 186px;
+  pointer-events: auto;
 }
 
-#check:checked ~ .beranda {
-  margin-left: 198px;
-  width: calc(100% - 198px);
+#check:checked ~ .sidebar .nav-pills li a .judul {
+    display: inline-block;
 }
 
-#check {
+#check:checked ~ .sidebar .nav-pills li a:hover {
+  background-color: #FFF;
+  color: black;
+}
+
+#check:checked ~ .sidebar .nav-pills li a .fas.fa-caret-down {
+  display: inline-block;
+}
+
+#check:not(:checked) ~ .sidebar .nav-pills li a .judul {
   display: none;
+}
+
+#check:not(:checked) ~ .sidebar .nav .collapse {
+  display: none;
+}
+  
+#sidebar_btn {
+    font-size: 20px;
 }
 
 div.gallery {
@@ -183,3 +235,4 @@ div.desc {
 iframe {
   padding: 10px;
 }
+
