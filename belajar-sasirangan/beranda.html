@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1abfd69dfb.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" id="check">
+  <nav class="navbar border-bottom">
+    <div class="container-fluid">
+      <form class="d-flex">
+        <label for="check" class="ms-3">
+          <i class="fas fa-bars" id="sidebar_btn"></i>
+        </label>
+        <img src="gambar/logo fix.png" alt="Logo" width="45"  class="d-inline-block align-text-top ms-1 me-2">
+        <span class="navbar-brand h1">Belajar Sasirangan</span>
+      </form>
+    </div>
+  </nav>
+        
+  <div class="sidebar row">
+    <div class="d-flex flex-column col-auto">
+        <ul class="nav nav-pills flex-column pt-3">
+            <li class="nav-item my-sm-1 my-2">
+                <a href="beranda.html" class="nav-link text-white" aria-current="page">
+                    <i class="fas fa-home"></i>
+                    <span class="judul">Beranda</span>
+                </a>
+            </li>
+
+            <li class="nav-item my-sm-1 my-1">
+                <a href="#sidemenu" data-bs-toggle="collapse" class="nav-link text-white" aria-current="page">
+                    <i class="fas fa-book"></i>
+                    <span class="judul">Materi</span>
+                    <i class="fas fa-caret-down"></i>
+                </a>
+                <ul class="nav collapse list-unstyled" id="sidemenu" data-bs-parent="#menu">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="materi_sejarah.html">Sejarah</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="materi_motif.html">Motif</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="materi_teknik.html">Teknik</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="materi_penerapan.html">Penerapan</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav-item my-sm-1 my-1">
+                <a href="#sidemenu-video" data-bs-toggle="collapse" class="nav-link text-white" aria-current="page">
+                    <i class="fas fa-video"></i>
+                    <span class="judul">Video</span>
+                    <i class="fas fa-caret-down"></i>
+                </a>
+                <ul class="nav collapse list-unstyled" id="sidemenu-video" data-bs-parent="#menu">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="video_sejarah.html">Sejarah</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="video_motif.html">Motif</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="video_teknik.html">Teknik</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav-item my-sm-1 my-1">
+                <a href="kuis.html" class="nav-link text-white" aria-current="page">
+                    <i class="fas fa-question"></i>
+                    <span class="judul">Kuis</span>
+                </a>
+            </li>
+            <li class="nav-item my-sm-1 my-1">
+                <a href="tentang.html" class="nav-link text-white" aria-current="page">
+                    <i class="fas fa-info"></i>
+                    <span class="judul">Tentang</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+        <div class="beranda container-fluid border-5">
+            <div class="container mt-3">
+                <div class="beranda-child card">
+                    <div class="card-body">
+                        <h4>Beranda</h4>
+                    </div>
+                </div>
+                <div class="beranda-child card mt-3 ">
+                    <img class="beranda-child card card-img-top" src="gambar/sasirangan.jpg" alt="Card image">
+                    <div class="d-flex card-img-overlay ">
+                        
+                            <div class="p-3 align-self-center" style="background-color: white; border-radius: 5px;">
+                                <h2 class="card-title" style="font-weight: bold; letter-spacing: 3px;">Belajar Sasirangan</h2>
+                                <p>Waja Sampai Kaputing</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+</body>
+</html>
